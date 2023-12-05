@@ -1,0 +1,38 @@
+.navbar{
+
+    width: 100%;
+    background-color: blue;
+    height: 80px;
+}
+.logo{
+    width: 10%;
+    height: 100%;
+    background-color: aqua;
+    float: left;
+}
+.nav{
+    width: 90%;
+    height: 100%;
+    background-color: rgb(217, 255, 0);
+    float: left;
+    display: flex;
+    align-items: center;
+
+
+
+}
+.nav > ul{
+    width: 100%;
+justify-content: space-evenly;
+    display: flex;
+    text-transform: capitalize;
+    
+}
+
+.nav > ul>li{
+    display: inline-block;
+margin-left: -10px;text-decoration: none;
+}
+.nav > ul>li>a{
+    text-decoration: none;
+}
