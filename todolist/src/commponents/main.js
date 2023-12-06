@@ -1,44 +1,42 @@
-import { useState } from "react"
+import { useState } from "react";
 
+export default function Main(props) {
+  const { dat, pa } = props;
 
-export default function Main(props){
+  const [usar, usarset] = useState(null);
+  
 
-const {dat,pa}=props
-
-const [usar, usarset] = useState(dat)
-console.log(dat)
-function edto(params) {
-console.log("k",usar)
-console.log(...dat)
-let ind=dat.indexOf(params)
-    
-    let p=prompt("ente rthe element")
+  const  edto=(params)=> {
+    let ind = dat.indexOf(params);
+let p=prompt("enter the value")
    
-usarset(dat.splice(ind, 0, "February"))
+    dat.splice(ind, 1, p);
+   console.log(...dat)
+   usarset([...dat])
+   console.log(usar,"is the new arr")
+  }
+  function dlto(pp) {
+    console.log("ppppp", pp);
+    let usfre = dat.filter((el) => {
+      return el != pp;
+    });
 
-  console.log("oro")
-
-
-    
-}
-function dlto (pp){
-console.log("ppppp",pp)
-let usfre=dat.filter((el)=>{
-   return el!=pp
-
-})
-
-pa(usfre)
-
-}
-    return(
-        <div className="main">
-            <ul>
-{dat&& dat.map((datael)=>{  return <div style={{display:"flex"}}><li>{datael}</li> <button onClick={()=>dlto(datael)} >dlt</button><button onClick={()=>edto(datael)} >edt</button> </div> 
-
-})}
-            </ul>
-        </div>
-    )
-
+    pa(usfre);
+  }
+  return (
+    <div className="main">
+      <ul>
+        {
+          dat.map((datael) => {
+            return (
+              <div style={{ display: "flex" }}>
+                <li>{datael}</li>{" "}
+                <button onClick={() => dlto(datael)}>dlt</button>
+                <button onClick={() => edto(datael)}>edt</button>{" "}
+              </div>
+            );
+          })}
+      </ul>
+    </div>
+  );
 }

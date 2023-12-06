@@ -5,8 +5,7 @@ import "./todcs.css"
 function App() {
   const [valaded,toadd]=useState([])
   function edtk(pa){
-console.log("edtpais ",pa)
-
+console.log("edtpaisjjj",pa)
 toadd(pa)
   }
 const funct=(para)=>{
