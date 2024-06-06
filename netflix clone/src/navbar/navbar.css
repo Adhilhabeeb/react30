@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+
+
+.navm {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 13vh;   
+
+}
+
+
+
+.logo {    
+  width: 12%;
+  justify-content: center;
+  align-items: center;padding: 1%;
+  height: 100%;
+  display: flex;background-position: end;
+  
+  
+}
+.logo>img{    
+    width: 300px;
+    padding-left: 100px;
+
+    object-fit:scale-down;
+}
+
+.logonav {    
+  width: 88%;
+  height: 100%;
+  padding-right: 10%;
+  box-sizing: content-box;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.logonav > div {
+  width: 20%;  
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logonav > div select {
+  width: 200px;
+  background: transparent;
+ 
+  font-size: medium;
+  color: #fff;
+  font-weight: 200;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+padding: 1.5%;
+
+  border: 0.5px solid #fff;
+  outline: 0.5px solid #fff;
+  border-radius: 5px;
+}
+
+.logonav > div button {
+
+  padding: 10px;
+  color: #fff;
+  background-color: red;
+  outline: none;
+  font-size: medium;
+  border: none;
+  margin-left: 10px;
+  border-radius: 5px;
+  min-width: 100px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+
+@media only screen and (max-width: 500px){
+
+    .logo >img{
+        width: 150px;  
+    }
+
+   
+    .logonav {   
+      width: 65%;
+      height: 100%;
+      padding-right: 10%;
+      box-sizing: content-box;
+      display: flex;
+      align-items: center;
+      justify-content: end;
+    }
+    
+}

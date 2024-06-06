@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "shoehub-b478b",
+    "staging": "shoehub-b478b"
+  },
+  "targets": {},
+  "etags": {}
+}
